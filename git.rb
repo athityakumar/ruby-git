@@ -50,7 +50,7 @@ else
     puts "#{i+1} : #{branches[i]}"
     i = i+1
   end
-  puts "Choose a branch (#{active_branch}) : "
+  puts "Choose a branch (#{active_branch} is default) : "
   branch_number = gets.chomp.to_i
   if branch_number > 0 && branch_number <= branches.count
     branch = branches[branch_number-1]
