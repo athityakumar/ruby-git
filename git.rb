@@ -33,8 +33,35 @@ else
   puts "Git commit - checked."  
 end  
 
+i = 0
+active_branch = ""
+
+`git branch`.split("\n").each do |each_branch|
+  if each_branch.include? "* "
+    active_branch = each_branch.gsub("* ","")
+  end
+end
+branches = `git branch`.gsub("* ","").gsub("  ","").split("\n")
+
+if branches.count == 1
+  branch = active_branch
+else
+  while i < branches.count do
+    puts "#{i+1} : #{branches[i]}"
+    i = i+1
+  end
+  puts "Choose a branch (#{active_branch}) : "
+  branch_number = gets.chomp.to_i
+  if branch_number > 0 && branch_number <= branches.count
+    branch = branches[branch_number-1]
+    puts "Succesfully chosen #{branch} branch."
+  else
+    puts "Invalid branch. Choosing active branch #{active_branch} to push to."
+  end
+end
+
 if `git status`.include? "nothing to commit, working directory clean"
-  `git push origin master`
+  `git push origin #{branch}`
   puts "Git push - done."  
 else
   puts "Git push - checked."  
