@@ -8,10 +8,11 @@ Ruby-git is a simple 3-line ruby code that can deploy the current git repository
 TO-DO LIST
 ----------
 
-- [x] `git init` if no git system exists
+- [x] Initialise git, if no git system exists
 - [x] Have manual commit messages
 - [x] Have a default commit message in `git commit -m "message"` based on git status
-- [x] Add remote repo , if no remote exists
+- [x] Add a remote repository , if no remote repository exists
+- [x] Implement git push after git add & git commit
 
 CONTRIBUTION
 ------------

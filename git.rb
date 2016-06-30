@@ -25,7 +25,7 @@ if `git status`.include? "Changes to be committed:"
   puts "Enter commit message : "
   message = gets.chomp
   if message.empty?
-    message = `git status`.split('(use "git reset HEAD <file>..." to unstage)')[1].strip.gsub("\n",".")
+    message = `git status`.split('(use "git reset HEAD <file>..." to unstage)')[1].strip.gsub("\n",",")+"."
   end  
   `git commit -m "Ruby-bot commit - #{message}"`
   puts "Git commit - done."  
