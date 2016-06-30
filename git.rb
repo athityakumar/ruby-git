@@ -57,6 +57,7 @@ else
     puts "Succesfully chosen #{branch} branch."
   else
     puts "Invalid branch. Choosing active branch #{active_branch} to push to."
+    branch = active_branch
   end
 end
 
