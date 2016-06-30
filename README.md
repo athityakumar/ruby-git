@@ -13,7 +13,7 @@ TO-DO LIST
 - [x] Have a default commit message in `git commit -m "message"` based on git status
 - [x] Add a remote repository , if no remote repository exists
 - [x] Implement git push after git add & git commit
-- [ ] Add branch support to git push
+- [x] Add branch support to git push
 
 CONTRIBUTION
 ------------
