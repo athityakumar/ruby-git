@@ -9,7 +9,9 @@ TO-DO LIST
 ----------
 
 - [x] `git init` if no git system exists
-- [x] Have custom commit message in `git commit -m "message"` based on git status
+- [x] Have manual commit messages
+- [x] Have a default commit message in `git commit -m "message"` based on git status
+- [x] Add remote repo , if no remote exists
 
 CONTRIBUTION
 ------------
