@@ -22,8 +22,8 @@ else
 end  
 
 if `git status`.include? "Changes to be committed:"
-  #puts "Enter commit message : "
-  message = ""
+  puts "Enter commit message : "
+  message = gets.chomp
   if message.empty?
     message = `git status`.split('(use "git reset HEAD <file>..." to unstage)')[1].gsub("\n"," . ")
   end  
