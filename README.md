@@ -1,6 +1,6 @@
 RUBY-GIT
 --------
-Ruby-git is a simple ruby code that can deploy the current git repository, when executed. This can be made to work with gh-pages like a Jekyll page content creator. Most useful for gh-blogs and ruby enthusiasts. 
+Ruby-git is a simple ruby code that can deploy the current git repository to github, when executed. This can be made to work with gh-pages like a Jekyll page content creator. Most useful for gh-blogs and ruby enthusiasts. 
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-ruby.svg)](http://forthebadge.com)
 
