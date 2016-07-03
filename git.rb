@@ -34,7 +34,6 @@ begin
     puts "Git commit - checked."  
   end  
 
-  i = 0
   active_branch = ""
 
   `git branch`.split("\n").each do |each_branch|
@@ -42,11 +41,13 @@ begin
       active_branch = each_branch.gsub("* ","")
     end
   end
+  
   branches = `git branch`.gsub("* ","").gsub("  ","").split("\n")
 
   if branches.count == 1
     branch = active_branch
   else
+    i = 0
     while i < branches.count do
       puts "#{i+1} : #{branches[i]}"
       i = i+1
